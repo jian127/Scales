@@ -5,7 +5,7 @@ void setup() {
 void draw() {
   
   //random makes it go left right up down
-  int random = (((int)Math.random()*2));
+  int random = ((int)Math.random()*2);
   background(0,0,0);
  for (int x = -50; x <=1000; x+=45){
    for (int y = 0 ; y <=1000; y+=35){
@@ -26,7 +26,7 @@ void draw() {
 
 void scale(int x, int y) {
    //fill(0,255,0);
-   fill(100,(int)(Math.random()*256),100);
+   fill(100,((int)(Math.random()*256)),100);
   beginShape();
   vertex(x + 50,y );
   vertex(x,y );
@@ -34,7 +34,7 @@ void scale(int x, int y) {
   vertex(x + 25,y + 50);
   vertex(x + 45,y + 28);
   endShape(CLOSE);
-  fill(50,(int)(Math.random()*201),50);
+  fill(50,((int)(Math.random()*201)),50);
   beginShape();
   vertex(x + 45,y + 5);
   vertex(x + 5,y + 5);
