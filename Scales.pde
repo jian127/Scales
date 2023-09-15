@@ -5,7 +5,7 @@ void setup() {
 void draw() {
   
   //random makes it go left right up down
-  int random = ((int)random(2)*2);
+  int random = ((int)Math.random()*2);
   System.out.println(random);
   background(0,0,0);
  for (int x = -50; x <=1000; x+=45){
